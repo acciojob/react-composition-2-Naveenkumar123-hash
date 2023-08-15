@@ -1,1 +1,7 @@
-
+.model-overlay>button{
+   color: white;
+   background-color: red;
+}
+.model-p{
+    font-size: medium;
+}
