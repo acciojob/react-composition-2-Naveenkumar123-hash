@@ -6,17 +6,17 @@ import { useState } from "react";
 
 const App = () => {
 
-  const [status,setStatus]=useState(false);
+  const [show,setShow]=useState(false);
 
   function update(){
-    setStatus(false);
+    setShow(false);
   }
   return (
     <div className="model-overlay">
         <button onClick={()=>{
-          setStatus(true)
+          setShow(true)
         }}>Show Modal</button>
-        {(status)&&
+        {(show)&&
         <Modal update={update}/>
         }
     </div>
